@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root main_tree_to_execute = "MainTree" >
+
+<include ros_pkg="robothon2022_tree" path="tree/go_home.xml"/>
+<include ros_pkg="robothon2022_tree" path="tree/press_blue_button.xml"/>
+<include ros_pkg="robothon2022_tree" path="tree/pick_and_insert_key.xml"/>
+<include ros_pkg="robothon2022_tree" path="tree/pick_and_insert_ethernet.xml"/>
+<include ros_pkg="robothon2022_tree" path="tree/extract_batteries_AA.xml"/>
+<include ros_pkg="robothon2022_tree" path="tree/extract_coin_battery.xml"/>  <!--TO DO-->
+<include ros_pkg="robothon2022_tree" path="tree/press_red_button.xml"/>
+
+  <BehaviorTree ID="MainTree">
+    <Sequence name="tasks_sequence">
+      <Subtree ID='GoHome'/>
+      <Subtree ID='PressBlueButton'/>
+      <Subtree ID='PickAndInsertKey'/>
+      <Subtree ID='PickAndInsertEthernet'/>
+      <Subtree ID='ExctractBatteriesAA'/>
+      <Subtree ID='ExtractCoinBattery'/>
+      <Subtree ID='PressRedButton'/>
+    </Sequence>
+  </BehaviorTree>
+</root>

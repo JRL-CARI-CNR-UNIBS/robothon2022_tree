@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<root main_tree_to_execute = "MainTree" >
+
+<include ros_pkg="robothon2022_tree" path="tree/task1.xml"/>
+
+  <BehaviorTree ID="MainTree">
+    <Sequence name="tasks_sequence">
+      <Subtree name="gripper_test/gripper_open_1"/>
+    </Sequence>
+  </BehaviorTree>
+</root>
+
+
+<!-- <?xml version="1.0"?>
+<root main_tree_to_execute = "MainTree" >
+  <BehaviorTree ID="MainTree">
+    <Sequence name="tasks_sequence">
+      <SkillActionNode name="gripper_test/gripper_open_1"/>
+      <GoToActionNode  name="test/go_to_start"/>
+      <SkillActionNode name="gripper_test/gripper_close_1"/>
+      <SkillActionNode name="test/move_z"/>
+      <SkillActionNode name="test/move_x1"/>
+      <SkillActionNode name="test/move_y1"/>
+      <SkillActionNode name="test/move_x2"/>
+      <SkillActionNode name="test/move_y2"/>
+      <SkillActionNode name="gripper_test/gripper_open_1"/>
+    </Sequence>
+  </BehaviorTree>
+</root> -->

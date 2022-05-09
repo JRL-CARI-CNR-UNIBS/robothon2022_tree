@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- <root main_tree_to_execute = "GoHome" > -->
+<root>
+  <BehaviorTree ID="GoHome">
+    <Sequence name="go_home_sequence">
+      <GoToActionNode name="test/go_to_start"/>
+    </Sequence>
+  </BehaviorTree>
+</root>
