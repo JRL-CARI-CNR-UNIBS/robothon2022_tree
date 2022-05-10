@@ -4,8 +4,13 @@ go_home:
 press_blue_button:
   go_to_blue_button:
     location_name: ["blue_button"]
-  close_gripper:
+  sensor_zeroing:
     #todo
+  close_gripper:
+    skill_type: "robotiq_gripper_move"
+    position: 0
+    force: 20
+    velocity: 100
   go_down:
       skill_type: "cart_move"
       frame_id: "tool0"
@@ -28,8 +33,13 @@ press_blue_button:
 press_red_button:
   go_to_red_button:
     location_name: ["red_button"]
-  close_gripper:
+  sensor_zeroing:
     #todo
+  close_gripper:
+    skill_type: "robotiq_gripper_move"
+    position: 0
+    force: 20
+    velocity: 100
   # go_down:
   #     skill_type: "cart_move"
   #     frame_id: "tool0"
@@ -50,11 +60,16 @@ press_red_button:
       move_time: 2
 
 pick_and_insert_key:
+  sensor_zeroing:
+    #todo
   pick:
     go_to_key:
       location_name: ["key"]
     open_gripper:
-      #todo
+      skill_type: "robotiq_gripper_move"
+      position: 50
+      force: 20
+      velocity: 100
     go_down:
       skill_type: "cart_move"
       frame_id: "world"
@@ -74,7 +89,10 @@ pick_and_insert_key:
       twist_move: [0.0,0.0,0.011,0.0,0.0,0.0]
       move_time: 1
     close_gripper:
-        #todo
+      skill_type: "robotiq_gripper_move"
+      position: 0
+      force: 100
+      velocity: 50
     extract_key:
       skill_type: "cart_move"
       frame_id: "tool0"
@@ -110,14 +128,20 @@ pick_and_insert_key:
       wrench_toll: [0.1]
       wrench_deadband: [0.1]
     partial_open_gripper:
-      #todo
+      skill_type: "robotiq_gripper_move"
+      position: 80
+      force: 20
+      velocity: 100
     rotate_key:
       skill_type: "cart_move"
       frame_id: "tool0"
       twist_move: [0.0, 0.0, 0.0, 0.0, 0.0, 0.42]
       move_time: 3
     open_gripper:
-      #todo
+      skill_type: "robotiq_gripper_move"
+      position: 100
+      force: 20
+      velocity: 100
     go_up:
       skill_type: "cart_move"
       frame_id: "world"
@@ -129,14 +153,20 @@ pick_and_insert_ethernet:
     go_to_ethernet:
       location_name: ["ethernet"]
     almost_close_gripper:
-      #todo
+      skill_type: "robotiq_gripper_move"
+      position: 50
+      force: 20
+      velocity: 100
     go_down:
       skill_type: "cart_move"
       frame_id: "tool0"
       twist_move: [0.0,0.0,0.02,0.0,0.0,0.0]
       move_time: 5.3
     close_gripper:
-      #todo
+      skill_type: "robotiq_gripper_move"
+      position: 0
+      force: 100
+      velocity: 20
     extract_ethernet:
       skill_type: "cart_move"
       frame_id: "tool0"
@@ -148,6 +178,8 @@ pick_and_insert_ethernet:
       frame_id: "board"
       twist_move: [0.0, 0.007, 0.0, 0.0, 0.0, 0.0]  #40.25 distanza ethernets (old = 0.0043)
       move_time: 1
+    sensor_zeroing:
+      #todo
     approach:
       skill_type: "cart_move"
       frame_id: "board"
@@ -216,7 +248,10 @@ pick_and_insert_ethernet:
       wrench_toll: [0.1]
       wrench_deadband: [0.1]
     open_gripper:
-      #todo
+      skill_type: "robotiq_gripper_move"
+      position: 100
+      force: 20
+      velocity: 100
     go_up:
       skill_type: "cart_move"
       frame_id: "tool0"
@@ -227,6 +262,11 @@ extract_batteries_AA:
   go_to_batteries_AA_case:
     location_name: ["batteries_AA_case"]
   close_gripper:
+    skill_type: "robotiq_gripper_move"
+    position: 0
+    force: 20
+    velocity: 100
+  sensor_zeroing:
     #todo
   go_down:
     skill_type: "cart_move"

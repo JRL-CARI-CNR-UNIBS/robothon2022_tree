@@ -6,6 +6,7 @@
       <GoToActionNode  name="extract_batteries_AA/go_to_batteries_AA_case"/>
       <SkillActionNode name="extract_batteries_AA/close_gripper"/>
       <SkillActionNode name="extract_batteries_AA/go_down"/>
+      <SkillActionNode name="extract_batteries_AA/sensor_zeroing"/>      
       <SkillActionNode name="extract_batteries_AA/touch_case"/>
       <SkillActionNode name="extract_batteries_AA/remove_case"/>
       <SkillActionNode name="extract_batteries_AA/go_up"/>

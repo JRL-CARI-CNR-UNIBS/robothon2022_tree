@@ -7,6 +7,7 @@
       <GoToActionNode  name="pick_and_insert_key/pick/go_to_key"/>
       <SkillActionNode name="pick_and_insert_key/pick/open_gripper"/>
       <SkillActionNode name="pick_and_insert_key/pick/go_down"/>
+      <SkillActionNode name="pick_and_insert_key/sensor_zeroing"/>
       <SkillActionNode name="pick_and_insert_key/pick/touch_down"/>
       <SkillActionNode name="pick_and_insert_key/pick/go_up"/>
       <SkillActionNode name="pick_and_insert_key/pick/close_gripper"/>
@@ -14,6 +15,7 @@
 
       <GoToActionNode  name="pick_and_insert_key/insert/go_to_key_lock"/>
       <SkillActionNode name="pick_and_insert_key/insert/go_down"/>
+      <SkillActionNode name="pick_and_insert_key/sensor_zeroing"/>
       <SkillActionNode name="pick_and_insert_key/insert/touch_down"/>
       <SkillActionNode name="pick_and_insert_keyst/insert/allign_key_with_hole"/>
       <SkillActionNode name="pick_and_insert_key/insert/insert_key"/>
