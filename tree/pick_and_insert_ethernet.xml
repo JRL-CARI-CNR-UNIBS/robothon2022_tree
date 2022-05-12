@@ -9,8 +9,7 @@
       <SkillActionNode name="pick_and_insert_ethernet/pick/go_down"/>
       <SkillActionNode name="pick_and_insert_ethernet/pick/close_gripper"/>
       <SkillActionNode name="pick_and_insert_ethernet/pick/extract_ethernet"/>
-
-      <SkillActionNode  name="pick_and_insert_ethernet/insert/go_to_ethernet_lock"/>
+      <SkillActionNode name="pick_and_insert_ethernet/insert/go_to_ethernet_lock"/>
       <SkillActionNode name="pick_and_insert_ethernet/insert/approach"/>
       <SkillActionNode name="pick_and_insert_ethernet/insert/rotation_x"/>
       <SkillActionNode name="pick_and_insert_ethernetst/insert/rotation_y"/>
