@@ -4,9 +4,9 @@
   <BehaviorTree ID="PressRedButton">
     <Sequence name="press_red_button_sequence">
       <GoToActionNode  name="press_red_button/go_to_red_button"/>
-      <SkillActionNode name="press_red_button/close_gripper"/>
-      <!-- <SkillActionNode name="press_red_button/go_down"/> -->
-      <SkillActionNode name="press_red_button/sensor_zeroing"/>      
+      <!-- <SkillActionNode name="press_red_button/close_gripper"/> -->
+      <SkillActionNode name="press_red_button/go_down"/>
+      <!-- <SkillActionNode name="press_red_button/sensor_zeroing"/> -->
       <SkillActionNode name="press_red_button/press"/>
       <SkillActionNode name="press_red_button/go_up"/>
     </Sequence>

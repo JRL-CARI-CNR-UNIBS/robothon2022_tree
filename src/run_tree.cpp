@@ -20,7 +20,7 @@ int main(int argc, char **argv)
     factory.registerNodeType<GoToActionNode>("GoToActionNode");
     ROS_INFO("GoToActionNode registered");
 
-    BT::Tree tree = factory.createTreeFromFile("/home/gauss/projects/planning_ws/src/robothon2022_tree/tree/robothon2022_tree.xml");
+    BT::Tree tree = factory.createTreeFromFile("/home/teamcari/projects/robothon2022_ws/src/robothon2022_tree/tree/robothon2022_tree.xml");
 
     ROS_INFO("Tree created");
 

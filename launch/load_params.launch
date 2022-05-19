@@ -2,9 +2,4 @@
 
 <launch>
   <rosparam command="load" file="$(find robothon2022_tree)/config/exec_params.yaml"/>
-  <node name="run_tree"
-    type="run_tree"
-    pkg="robothon2022_tree"
-    output="screen">
-  </node>
 </launch>

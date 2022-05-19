@@ -2,7 +2,8 @@
 
 GoToActionNode::GoToActionNode(const std::string &name) : BT::SyncActionNode(name, {})
 {
-    go_to_action_ = std::make_shared<actionlib::SimpleActionClient<manipulation_msgs::GoToAction>>("/go_to_location_server/kr_50_r2500/go_to", true);
+    go_to_action_ = std::make_shared<actionlib::SimpleActionClient<manipulation_msgs::GoToAction>>("/go_to_location_server/manipulator/go_to", true);
+    ROS_INFO("Wait for /go_to_location_server/manipulator/go_to");
     go_to_action_->waitForServer();
     ROS_INFO("Go_to_action_ ready");
 }
