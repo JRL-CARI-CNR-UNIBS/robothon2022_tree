@@ -1,0 +1,76 @@
+exec_params:
+
+  pick_and_insert_key:
+    go_to_key:
+      location_name: ["pick_key"]
+    open_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_open.urp","/programs/control_by_CARI.urp"]
+      play: true
+    go_down:
+      skill_type: "cartesian_position"
+      traZmm: -54
+      frame: "world"
+      linear_velocity_mm_s: 100
+    close_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_close.urp","/programs/control_by_CARI.urp"]
+      play: true
+    extract_key:
+      skill_type: "cartesian_position"
+      traZmm: 40
+      frame: "world"
+      linear_velocity_mm_s: 100
+    go_to_key_lock:
+      skill_type: "cartesian_position"
+      position: [0.02, 0.070, 0.0]
+      orientation: [0.0, 0.0, 0.707, 0.707]
+      frame: "pick_key" # dovremo definire il movimento rispetto alla board
+      linear_velocity_mm_s: 100
+    insert_go_to_key_lock:
+      location_name: ["insert_key"]
+    rotate_pre_touch:
+      skill_type: "cartesian_position"
+      rotZdeg: -45
+      frame: "tool0"
+      angular_velocity_deg_s: 45
+    go_down_to_key_hole:
+      skill_type: "cartesian_position"
+      traZmm: -32 #-30
+      frame: "world"
+      linear_velocity_mm_s: 100
+    touch_key_hole:
+      skill_type: "simple_touch"
+      goal_twist: [0.0,0.0,0.005,0.0,0.0,0.0]
+      target_force: 60
+      goal_twist_frame: "tool0"
+      relative_target: true
+      release: 0
+      release_condition: 0
+    rotate_post_touch:
+      skill_type: "cartesian_position"
+      rotZdeg: 45
+      frame: "tool0"
+      angular_velocity_deg_s: 45
+    insert_key:
+      skill_type: "cartesian_position"
+      traZmm: -13 #-40
+      frame: "world"
+      linear_velocity_mm_s: 20
+    open_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_open.urp","/programs/control_by_CARI.urp"]
+      play: true
+    rotate_key:
+      skill_type: "cartesian_position"
+      rotZdeg: -43
+      frame: "world"
+      angular_velocity_deg_s: 27
+    go_up:
+      skill_type: "cartesian_position"
+      traZmm: 35
+      frame: "world"
+      linear_velocity_mm_s: 100

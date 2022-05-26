@@ -1,0 +1,59 @@
+exec_params:
+
+  pick_and_insert_ethernet:
+    go_to_ethernet:
+      location_name: ["pick_ethernet_rot"]
+    open_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_open.urp","/programs/control_by_CARI.urp"]
+      play: true
+    go_down:
+      skill_type: "cartesian_position"
+      traZmm: -111
+      frame: "world"
+      linear_velocity_mm_s: 100
+    close_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_close.urp","/programs/control_by_CARI.urp"]
+      play: true
+    go_up:
+      skill_type: "cartesian_position"
+      traZmm: 30
+      frame: "world"
+      linear_velocity_mm_s: 100
+    second_go_down:
+      skill_type: "cartesian_position"
+      traZmm: -20
+      frame: "world"
+      linear_velocity_mm_s: 100
+    touch_ethernet_hole:
+      skill_type: "simple_touch"
+      goal_twist: [0.0,0.0,0.005,0.0,0.0,0.0]
+      target_force: 50
+      goal_twist_frame: "reference"
+      relative_target: true
+      release: 0
+      release_condition: 0
+    go_to_ethernet_lock:
+      skill_type: "cartesian_position"
+      position: [0.040, 0.003, 0.0]
+      orientation: [0.1736482, 0.0, 0 , 0.9848078]
+      frame: "reference" # dovremo definire il movimento rispetto alla board
+      linear_velocity_mm_s: 100
+    rotate_ethernet:
+      skill_type: "cartesian_position"
+      position: [0.0, -0.002, 0.0]
+      orientation: [-0.1736482, 0.0, 0.0, 0.9848078]
+      frame: "reference" # dovremo definire il movimento rispetto alla board
+      linear_velocity_mm_s: 10
+      angular_velocity_deg_s: 10
+    push_ethernet_hole:
+      skill_type: "simple_touch"
+      goal_twist: [0.0,0.0,0.005,0.0,0.0,0.0]
+      target_force: 50
+      goal_twist_frame: "reference"
+      relative_target: true
+      release: 0
+      release_condition: 0

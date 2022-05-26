@@ -1,0 +1,52 @@
+exec_params:
+  extract_coin_battery:
+    go_to_battery:
+      location_name: ["coin_battery"]
+    go_down:
+      skill_type: "cartesian_position"
+      traZmm: -49
+      frame: "world"
+      linear_velocity_mm_s: 40
+    press:
+      skill_type: "simple_touch"
+      goal_twist: [0.0,0.0,-0.005,0.0,0.0,0.0]
+      target_force: 30
+      goal_twist_frame: "world"
+      relative_target: true
+      release: 5
+      release_condition: 0
+    push:
+      skill_type: "cartesian_position"
+      traXmm: -14
+      frame: "coin_battery"
+      linear_velocity_mm_s: 20
+    go_up:
+      skill_type: "cartesian_position"
+      traZmm: 10
+      frame: "world"
+      linear_velocity_mm_s: 40
+    go_on_battery:
+      skill_type: "cartesian_position"
+      traZmm: -13
+      frame: "world"
+      linear_velocity_mm_s: 40
+    close_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_close.urp","/programs/control_by_CARI.urp"]
+      play: true
+    close_gripper_slow:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_close_slow.urp","/programs/control_by_CARI.urp"]
+      play: true
+    open_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_open.urp","/programs/control_by_CARI.urp"]
+      play: true
+    go_out:
+      skill_type: "cartesian_position"
+      traYmm: -20
+      frame: "world"
+      linear_velocity_mm_s: 40

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <launch>
-  <rosparam command="load" file="$(find robothon2022_tree)/config/exec_params.yaml"/>
+  <include file="$(find robothon2022_tree)/launch/load_params.launch"/>
   <node name="run_tree"
     type="run_tree"
     pkg="robothon2022_tree"

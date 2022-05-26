@@ -1,25 +1,26 @@
 <?xml version="1.0"?>
 <root main_tree_to_execute = "MainTree" >
 
-<!-- <include path="go_home.xml"/> -->
+<include path="go_home.xml"/>
 <include path="press_blue_button.xml"/>
 <include path="press_red_button.xml" />
-<!-- <include path="pick_and_insert_key.xml"/> -->
-<!-- <include path="pick_and_insert_ethernet.xml"/> -->
-<!-- <include path="extract_batteries_AA.xml"/> -->
-<!-- <include path="extract_coin_battery.xml"/> -->
+<include path="pick_and_insert_key.xml"/>
+<include path="pick_and_insert_ethernet.xml"/>
+<include path="extract_batteries_AA.xml"/>
+<include path="extract_coin_battery.xml"/>
 <!--TO DO
 <include ros_pkg="robothon2022_tree" path="tree/press_red_button.xml"/>-->
 
   <BehaviorTree ID="MainTree">
     <Sequence>
-      <!-- <SubTree ID='GoHome'/> -->
+      <SubTree ID='GoHome'/>
       <SubTree ID="PressBlueButton"/>
-      <!-- <SubTree ID='PickAndInsertKey'/> -->
-      <!-- <SubTree ID='PickAndInsertEthernet'/> -->
-      <!-- <SubTree ID='ExctractBatteriesAA'/> -->
-      <!-- <SubTree ID='ExtractCoinBattery'/> -->
+      <SubTree ID='PickAndInsertKey'/>
+      <SubTree ID='PickAndInsertEthernet'/>
+      <!-- <SubTree ID='ExtractBatteriesAA'/> -->
+      <SubTree ID='ExtractCoinBattery'/>
       <SubTree ID='PressRedButton'/>
+      <SubTree ID='GoHome'/>
     </Sequence>
   </BehaviorTree>
 

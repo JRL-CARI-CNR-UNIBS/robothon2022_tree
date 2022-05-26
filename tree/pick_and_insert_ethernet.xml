@@ -4,30 +4,19 @@
 <root>
   <BehaviorTree ID="PickAndInsertEthernet">
     <Sequence name="pick_and_insert_ethernet_sequence">
-      <GoToActionNode  name="pick_and_insert_ethernet/pick/go_to_ethernet"/>
-      <SkillActionNode name="pick_and_insert_ethernet/pick/almost_close_gripper"/>
-      <SkillActionNode name="pick_and_insert_ethernet/pick/go_down"/>
-      <SkillActionNode name="pick_and_insert_ethernet/pick/close_gripper"/>
-      <SkillActionNode name="pick_and_insert_ethernet/pick/extract_ethernet"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/go_to_ethernet_lock"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/approach"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/rotation_x"/>
-      <SkillActionNode name="pick_and_insert_ethernetst/insert/rotation_y"/>
-      <SkillActionNode name="pick_and_insert_ethernetst/insert/rotation_y"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/sensor_zeroing"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/touch_z"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/sensor_zeroing"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/touch_y"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/sensor_zeroing"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/touch_x"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/move_z"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/counter_rotation_x"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/counter_rotation_y"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/sensor_zeroing"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/final_touch"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/open_gripper"/>
-      <SkillActionNode name="pick_and_insert_ethernet/insert/go_up"/>
-
+      <SkillActionNode name="pick_and_insert_ethernet/open_gripper"/>
+      <GoToActionNode  name="pick_and_insert_ethernet/go_to_ethernet"/>
+      <!-- <SkillActionNode name="pick_and_insert_ethernet/rotation"/> -->
+      <SkillActionNode name="pick_and_insert_ethernet/go_down"/>
+      <SkillActionNode name="pick_and_insert_ethernet/close_gripper"/>
+      <SkillActionNode name="pick_and_insert_ethernet/go_up"/>
+      <SkillActionNode name="pick_and_insert_ethernet/go_to_ethernet_lock"/>
+      <SkillActionNode name="pick_and_insert_ethernet/second_go_down"/>
+      <SkillActionNode name="pick_and_insert_ethernet/touch_ethernet_hole"/>
+      <SkillActionNode name="pick_and_insert_ethernet/rotate_ethernet"/>
+      <SkillActionNode name="pick_and_insert_ethernet/push_ethernet_hole"/>
+      <SkillActionNode name="pick_and_insert_ethernet/open_gripper"/>
+      <SkillActionNode name="pick_and_insert_ethernet/go_up"/>
     </Sequence>
   </BehaviorTree>
 </root>

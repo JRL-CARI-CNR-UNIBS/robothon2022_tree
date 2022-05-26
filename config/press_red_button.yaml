@@ -1,0 +1,28 @@
+exec_params:
+
+  press_red_button:
+    go_to_red_button:
+      location_name: ["red_button"]
+    close_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_close.urp","/programs/control_by_CARI.urp"]
+      play: true
+    go_down:
+      skill_type: "cartesian_position"
+      traZmm: -57
+      frame: "world"
+      linear_velocity_mm_s: 40
+    press:
+      skill_type: "simple_touch"
+      goal_twist: [0.0,0.0,-0.005,0.0,0.0,0.0]
+      target_force: 40
+      goal_twist_frame: "world"      #"base"
+      relative_target: true
+      release: 5
+      release_condition: 0
+    go_up:
+      skill_type: "cartesian_position"
+      traZmm: 48
+      frame: "world"
+      linear_velocity_mm_s: 40

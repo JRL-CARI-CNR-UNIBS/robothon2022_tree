@@ -1,0 +1,79 @@
+exec_params:
+  extract_batteries_AA:
+    go_to_batteries_AA_case:
+      location_name: ["batteries_AA_case"]
+    go_to_magnet:
+      location_name: ["magnet"]
+    go_to_first_battery:
+      location_name: ["first_battery"]
+    go_to_second_battery:
+      location_name: ["second_battery"]
+    go_to_insert_first:
+      location_name: ["insert_first_battery"]
+    close_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_close.urp","/programs/control_by_CARI.urp"]
+      play: true
+    open_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_open.urp","/programs/control_by_CARI.urp"]
+      play: true
+    go_down:
+      skill_type: "cartesian_position"
+      traZmm: -49
+      frame: "world"
+      linear_velocity_mm_s: 40
+    go_down_magnet:
+      skill_type: "cartesian_position"
+      traZmm: -80
+      frame: "world"
+      linear_velocity_mm_s: 40
+    go_down_battery:
+      skill_type: "cartesian_position"
+      traZmm: -30
+      frame: "world"
+      linear_velocity_mm_s: 40
+    remove_case:
+      skill_type: "cartesian_position"
+      traXmm: -65
+      frame: "batteries_AA_case"
+      linear_velocity_mm_s: 40
+    go_up:
+      skill_type: "cartesian_position"
+      traZmm: 35
+      frame: "world"
+      linear_velocity_mm_s: 40
+    go_up_magnet:
+      skill_type: "cartesian_position"
+      traZmm: 150
+      frame: "world"
+      linear_velocity_mm_s: 40
+    press:
+      skill_type: "simple_touch"
+      goal_twist: [0.0,0.0,-0.005,0.0,0.0,0.0]
+      target_force: 50
+      goal_twist_frame: "world"
+      relative_target: true
+      release: 5
+      release_condition: 0
+    press_magnet:
+      skill_type: "simple_touch"
+      goal_twist: [0.0,0.0,-0.005,0.0,0.0,0.0]
+      target_force: 40
+      goal_twist_frame: "world"
+      relative_target: true
+      release: 5
+      release_condition: 0
+    active_magnet:
+      skill_type: "active_magnet"
+      active: true
+    deactive_magnet:
+      skill_type: "active_magnet"
+      active: false
+    insert_battery:
+      skill_type: "cartesian_position"
+      traZmm: -80
+      frame: "world"
+      linear_velocity_mm_s: 10

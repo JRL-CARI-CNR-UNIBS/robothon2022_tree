@@ -3,26 +3,22 @@
 
 <root>
   <BehaviorTree ID="PickAndInsertKey">
-    <Sequence name="pick_and_insert_key_sequence">
-      <GoToActionNode  name="pick_and_insert_key/pick/go_to_key"/>
-      <SkillActionNode name="pick_and_insert_key/pick/open_gripper"/>
-      <SkillActionNode name="pick_and_insert_key/pick/go_down"/>
-      <SkillActionNode name="pick_and_insert_key/sensor_zeroing"/>
-      <SkillActionNode name="pick_and_insert_key/pick/touch_down"/>
-      <SkillActionNode name="pick_and_insert_key/pick/go_up"/>
-      <SkillActionNode name="pick_and_insert_key/pick/close_gripper"/>
-      <SkillActionNode name="pick_and_insert_key/pick/extract_key"/>
-
-      <GoToActionNode  name="pick_and_insert_key/insert/go_to_key_lock"/>
-      <SkillActionNode name="pick_and_insert_key/insert/go_down"/>
-      <SkillActionNode name="pick_and_insert_key/sensor_zeroing"/>
-      <SkillActionNode name="pick_and_insert_key/insert/touch_down"/>
-      <SkillActionNode name="pick_and_insert_keyst/insert/allign_key_with_hole"/>
-      <SkillActionNode name="pick_and_insert_key/insert/insert_key"/>
-      <SkillActionNode name="pick_and_insert_key/insert/partial_open_gripper"/>
-      <SkillActionNode name="pick_and_insert_key/insert/rotate_key"/>
-      <SkillActionNode name="pick_and_insert_key/insert/open_gripper"/>
-      <SkillActionNode name="pick_and_insert_key/insert/go_up"/>
+     <Sequence name="pick_and_insert_key_sequence">    <!--parte utile verso l'interno -->
+      <GoToActionNode  name="pick_and_insert_key/go_to_key"/>
+      <SkillActionNode name="pick_and_insert_key/open_gripper"/>
+      <SkillActionNode name="pick_and_insert_key/go_down"/>
+      <SkillActionNode name="pick_and_insert_key/close_gripper"/>
+      <SkillActionNode name="pick_and_insert_key/extract_key"/>
+      <!-- <SkillActionNode name="pick_and_insert_key/go_to_key_lock"/> -->
+      <GoToActionNode  name="pick_and_insert_key/insert_go_to_key_lock"/>
+      <SkillActionNode name="pick_and_insert_key/rotate_pre_touch"/>
+      <SkillActionNode name="pick_and_insert_key/go_down_to_key_hole"/>
+      <SkillActionNode name="pick_and_insert_key/touch_key_hole"/>
+      <SkillActionNode name="pick_and_insert_key/rotate_post_touch"/>
+      <SkillActionNode name="pick_and_insert_key/insert_key"/>
+      <SkillActionNode name="pick_and_insert_key/rotate_key"/>
+      <SkillActionNode name="pick_and_insert_key/open_gripper"/>
+      <SkillActionNode name="pick_and_insert_key/go_up"/>
 
     </Sequence>
   </BehaviorTree>

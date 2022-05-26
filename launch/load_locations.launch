@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+  <rosparam command="load" file="$(find robothon2022_configurations)/config/manipulation_config/go_to_location_server.yaml"/>
+  <node pkg="go_to_location"  type="go_to_location_loader" name="go_to_location_loader" output="screen"/>
+</launch>

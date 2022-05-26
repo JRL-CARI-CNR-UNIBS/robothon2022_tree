@@ -1,0 +1,13 @@
+exec_params:
+
+  go_home:
+    go_to_home:
+      location_name: ["home"]
+    connect_dashboard:
+      skill_type: "ur_connect_dashboard"
+      ur_hw_name: "ur3_hw"
+    gripper_activation:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_activation.urp","/programs/control_by_CARI.urp"]
+      play: true

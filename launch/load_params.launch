@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 
 <launch>
-  <rosparam command="load" file="$(find robothon2022_tree)/config/exec_params.yaml"/>
+  <rosparam command="load" file="$(find robothon2022_tree)/config/go_home.yaml"/>
+  <rosparam command="load" file="$(find robothon2022_tree)/config/press_blue_button.yaml"/>
+  <rosparam command="load" file="$(find robothon2022_tree)/config/press_red_button.yaml"/>
+  <rosparam command="load" file="$(find robothon2022_tree)/config/pick_and_insert_key.yaml"/>
+  <rosparam command="load" file="$(find robothon2022_tree)/config/pick_and_insert_ethernet.yaml"/>
+  <rosparam command="load" file="$(find robothon2022_tree)/config/extract_batteries_AA.yaml"/>
+  <rosparam command="load" file="$(find robothon2022_tree)/config/extract_coin_battery.yaml"/>
 </launch>
