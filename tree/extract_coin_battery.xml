@@ -9,7 +9,8 @@
       <SkillActionNode name="extract_coin_battery/push"/>
       <SkillActionNode name="extract_coin_battery/go_up"/>
       <SkillActionNode name="extract_coin_battery/open_gripper"/>
-      <SkillActionNode name="extract_coin_battery/go_on_battery"/>
+      <!-- <SkillActionNode name="extract_coin_battery/go_on_battery"/> -->
+      <SkillActionNode name="extract_coin_battery/down_on_battery"/>
       <SkillActionNode name="extract_coin_battery/close_gripper_slow"/>
       <SkillActionNode name="extract_coin_battery/go_up"/>
       <SkillActionNode name="extract_coin_battery/go_out"/>

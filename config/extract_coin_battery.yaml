@@ -10,14 +10,14 @@ exec_params:
     press:
       skill_type: "simple_touch"
       goal_twist: [0.0,0.0,-0.005,0.0,0.0,0.0]
-      target_force: 30
+      target_force: 20
       goal_twist_frame: "world"
       relative_target: true
       release: 5
       release_condition: 0
     push:
       skill_type: "cartesian_position"
-      traXmm: -14
+      traXmm: -15
       frame: "coin_battery"
       linear_velocity_mm_s: 20
     go_up:
@@ -26,6 +26,11 @@ exec_params:
       frame: "world"
       linear_velocity_mm_s: 40
     go_on_battery:
+      skill_type: "cartesian_position"
+      traXmm: 2
+      frame: "coin_battery"
+      linear_velocity_mm_s: 40
+    down_on_battery:
       skill_type: "cartesian_position"
       traZmm: -13
       frame: "world"

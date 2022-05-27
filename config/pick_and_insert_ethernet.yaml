@@ -57,3 +57,9 @@ exec_params:
       relative_target: true
       release: 0
       release_condition: 0
+    go_down_ethernet_hole:
+      skill_type: "cartesian_position"
+      position: [0.0, 0.0, 0.003]
+      orientation: [0.0, 0.0, 0 , 1]
+      frame: "reference" # dovremo definire il movimento rispetto alla board
+      linear_velocity_mm_s: 3

@@ -14,7 +14,8 @@
       <SkillActionNode name="pick_and_insert_ethernet/second_go_down"/>
       <SkillActionNode name="pick_and_insert_ethernet/touch_ethernet_hole"/>
       <SkillActionNode name="pick_and_insert_ethernet/rotate_ethernet"/>
-      <SkillActionNode name="pick_and_insert_ethernet/push_ethernet_hole"/>
+      <!-- <SkillActionNode name="pick_and_insert_ethernet/push_ethernet_hole"/> -->
+      <SkillActionNode name="pick_and_insert_ethernet/go_down_ethernet_hole"/>
       <SkillActionNode name="pick_and_insert_ethernet/open_gripper"/>
       <SkillActionNode name="pick_and_insert_ethernet/go_up"/>
     </Sequence>
