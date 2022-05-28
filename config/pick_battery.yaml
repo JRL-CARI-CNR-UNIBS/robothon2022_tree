@@ -1,0 +1,27 @@
+exec_params:
+  pick_battery:
+    go_to_first_battery:
+      location_name: ["pick_first_battery"]
+    open_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_open.urp","/programs/control_by_CARI.urp"]
+      play: true
+    go_down:
+      skill_type: "cartesian_position"
+      traZmm: -50
+      frame: "world"
+      linear_velocity_mm_s: 25
+    close_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_close.urp","/programs/control_by_CARI.urp"]
+      play: true
+    go_up:
+      skill_type: "cartesian_position"
+      traZmm: 50
+      frame: "world"
+      linear_velocity_mm_s: 25
+
+    go_to_second_battery:
+      location_name: ["pick_second_battery"]

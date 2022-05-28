@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+  <BehaviorTree ID="PickFirstBattery">
+    <Sequence name="pick_first_battery">
+      <GoToActionNode  name="pick_battery/go_to_first_battery"/>
+      <SkillActionNode name="pick_battery/open_gripper"/>
+      <SkillActionNode name="pick_battery/go_down"/>
+      <SkillActionNode name="pick_battery/close_gripper"/>
+      <SkillActionNode name="pick_battery/go_up"/>
+    </Sequence>
+  </BehaviorTree>
+</root>

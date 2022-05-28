@@ -2,12 +2,47 @@ exec_params:
   extract_batteries_AA:
     go_to_batteries_AA_case:
       location_name: ["batteries_AA_case"]
-    go_to_magnet:
-      location_name: ["magnet"]
+    go_to_tool:
+      location_name: ["extract_tool"]
     go_to_first_battery:
-      location_name: ["first_battery"]
+      location_name: ["extract_first_battery"]
     go_to_second_battery:
-      location_name: ["second_battery"]
+      location_name: ["extract_second_battery"]
+    go_down:
+      skill_type: "cartesian_position"
+      traZmm: -50
+      frame: "world"
+      linear_velocity_mm_s: 40
+    go_down_fast:
+      skill_type: "cartesian_position"
+      traZmm: -50
+      frame: "world"
+      linear_velocity_mm_s: 100
+    go_down_case:
+      skill_type: "cartesian_position"
+      traZmm: -51.5
+      frame: "world"
+      linear_velocity_mm_s: 40
+    press:
+      skill_type: "cartesian_position"
+      traYmm: -3
+      frame: "tip"
+      linear_velocity_mm_s: 20
+      # skill_type: "simple_touch"
+      # goal_twist: [0.0,-0.005,0.0,0.0,0.0,0.0]
+      # target_force: 45
+      # goal_twist_frame: "tip"
+      # relative_target: true
+      # release: 0
+      # release_condition: 0
+    press_case:
+      skill_type: "simple_touch"
+      goal_twist: [0.0,0.0,0.005,0.0,0.0,0.0]
+      target_force: 40
+      goal_twist_frame: "tip"
+      relative_target: true
+      release: 0
+      release_condition: 0
     go_to_insert_first:
       location_name: ["insert_first_battery"]
     close_gripper:
@@ -20,11 +55,6 @@ exec_params:
       ur_hw_name: "ur3_hw"
       programs: ["/programs/gripper_open.urp","/programs/control_by_CARI.urp"]
       play: true
-    go_down:
-      skill_type: "cartesian_position"
-      traZmm: -49
-      frame: "world"
-      linear_velocity_mm_s: 40
     go_down_magnet:
       skill_type: "cartesian_position"
       traZmm: -80
@@ -45,19 +75,16 @@ exec_params:
       traZmm: 35
       frame: "world"
       linear_velocity_mm_s: 40
+    go_up_fast:
+      skill_type: "cartesian_position"
+      traZmm: 35
+      frame: "world"
+      linear_velocity_mm_s: 100
     go_up_magnet:
       skill_type: "cartesian_position"
       traZmm: 150
       frame: "world"
       linear_velocity_mm_s: 40
-    press:
-      skill_type: "simple_touch"
-      goal_twist: [0.0,0.0,-0.005,0.0,0.0,0.0]
-      target_force: 50
-      goal_twist_frame: "world"
-      relative_target: true
-      release: 5
-      release_condition: 0
     press_magnet:
       skill_type: "simple_touch"
       goal_twist: [0.0,0.0,-0.005,0.0,0.0,0.0]

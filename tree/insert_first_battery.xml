@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root>
+  <BehaviorTree ID="InsertFirstBattery">
+    <Sequence name="insert_first_battery">
+      <GoToActionNode  name="insert_battery/go_to_first_battery_hole"/>
+      <!-- <SkillActionNode name="insert_battery/push_down"/> -->
+      <SkillActionNode name="insert_battery/go_down"/>
+      <SkillActionNode name="insert_battery/first_battery_shift"/>
+      <SkillActionNode name="insert_battery/push_button"/>
+      <SkillActionNode name="insert_battery/open_gripper"/>
+      <SkillActionNode name="insert_battery/go_up"/>
+      <SkillActionNode name="insert_battery/close_gripper"/>
+      <SkillActionNode name="insert_battery/press"/>
+      <SkillActionNode name="insert_battery/go_up"/>      
+    </Sequence>
+  </BehaviorTree>
+</root>

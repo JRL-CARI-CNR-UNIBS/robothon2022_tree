@@ -20,7 +20,7 @@ exec_params:
       play: true
     go_up:
       skill_type: "cartesian_position"
-      traZmm: 30
+      traZmm: 50 #30
       frame: "world"
       linear_velocity_mm_s: 100
     second_go_down:
@@ -42,12 +42,17 @@ exec_params:
       orientation: [0.1736482, 0.0, 0 , 0.9848078]
       frame: "reference" # dovremo definire il movimento rispetto alla board
       linear_velocity_mm_s: 100
-    rotate_ethernet:
+    shift_ethernet:
       skill_type: "cartesian_position"
-      position: [0.0, -0.002, 0.0]
-      orientation: [-0.1736482, 0.0, 0.0, 0.9848078]
+      position: [0.0, -0.003, 0.0]
+      orientation: [0.0, 0.0, 0.0, 1]
       frame: "reference" # dovremo definire il movimento rispetto alla board
       linear_velocity_mm_s: 10
+    rotate_ethernet:
+      skill_type: "cartesian_position"
+      position: [0.0, 0.0, 0.0]
+      orientation: [-0.1736482, 0.0, 0.0, 0.9848078]
+      frame: "reference" # dovremo definire il movimento rispetto alla board
       angular_velocity_deg_s: 10
     push_ethernet_hole:
       skill_type: "simple_touch"
@@ -59,7 +64,7 @@ exec_params:
       release_condition: 0
     go_down_ethernet_hole:
       skill_type: "cartesian_position"
-      position: [0.0, 0.0, 0.003]
+      position: [0.0, 0.0, 0.006]
       orientation: [0.0, 0.0, 0 , 1]
       frame: "reference" # dovremo definire il movimento rispetto alla board
       linear_velocity_mm_s: 3

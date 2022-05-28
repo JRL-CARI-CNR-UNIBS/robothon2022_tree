@@ -5,7 +5,7 @@
       <GoToActionNode  name="extract_coin_battery/go_to_battery"/>
       <SkillActionNode name="extract_coin_battery/close_gripper"/>
       <SkillActionNode name="extract_coin_battery/go_down"/>
-      <SkillActionNode name="extract_coin_battery/press"/>
+      <!-- <SkillActionNode name="extract_coin_battery/press"/> -->
       <SkillActionNode name="extract_coin_battery/push"/>
       <SkillActionNode name="extract_coin_battery/go_up"/>
       <SkillActionNode name="extract_coin_battery/open_gripper"/>

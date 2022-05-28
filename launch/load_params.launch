@@ -8,4 +8,8 @@
   <rosparam command="load" file="$(find robothon2022_tree)/config/pick_and_insert_ethernet.yaml"/>
   <rosparam command="load" file="$(find robothon2022_tree)/config/extract_batteries_AA.yaml"/>
   <rosparam command="load" file="$(find robothon2022_tree)/config/extract_coin_battery.yaml"/>
+  <rosparam command="load" file="$(find robothon2022_tree)/config/pick_battery.yaml"/>
+  <rosparam command="load" file="$(find robothon2022_tree)/config/insert_battery.yaml"/>
+
+
 </launch>

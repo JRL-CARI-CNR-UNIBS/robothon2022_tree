@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+  <BehaviorTree ID="RemoveAndInsertBatteriesAA">
+    <Sequence name="remove_and_insert_batteries_AA_sequence">
+      <SubTree ID='ExtractBatteriesAA'/>
+      <SubTree ID='PickFirstBattery'/>
+      <SubTree ID='InsertFirstBattery'/>
+      <SubTree ID='PickSecondBattery'/>
+      <SubTree ID='InsertSecondBattery'/>
+    </Sequence>
+  </BehaviorTree>
+</root>

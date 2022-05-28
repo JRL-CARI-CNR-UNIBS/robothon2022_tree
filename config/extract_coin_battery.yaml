@@ -4,13 +4,13 @@ exec_params:
       location_name: ["coin_battery"]
     go_down:
       skill_type: "cartesian_position"
-      traZmm: -49
+      traZmm: -51
       frame: "world"
       linear_velocity_mm_s: 40
     press:
       skill_type: "simple_touch"
       goal_twist: [0.0,0.0,-0.005,0.0,0.0,0.0]
-      target_force: 20
+      target_force: 30
       goal_twist_frame: "world"
       relative_target: true
       release: 5

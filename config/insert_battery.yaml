@@ -1,0 +1,54 @@
+exec_params:
+  insert_battery:
+    go_to_second_battery_hole:
+      location_name: ["insert_second_battery"]
+    go_to_first_battery_hole:
+      location_name: ["insert_first_battery"]
+    go_down:
+      skill_type: "cartesian_position"
+      traZmm: -52
+      frame: "world"
+      linear_velocity_mm_s: 40
+    push_down:
+      skill_type: "simple_touch"
+      goal_twist: [0.0,0.0,0.005,0.0,0.0,0.0]
+      target_force: 50
+      goal_twist_frame: "reference"
+      relative_target: true
+      release: 0
+      release_condition: 0
+    second_battery_shift:
+      skill_type: "cartesian_position"
+      traXmm: -13
+      frame: "reference"
+      linear_velocity_mm_s: 5
+    first_battery_shift:
+      skill_type: "cartesian_position"
+      traYmm: 23
+      frame: "reference"
+      linear_velocity_mm_s: 5
+    push_button:
+      skill_type: "cartesian_position"
+      traZmm: 15
+      frame: "reference"
+      linear_velocity_mm_s: 10
+    go_up:
+      skill_type: "cartesian_position"
+      traZmm: 25
+      frame: "world"
+      linear_velocity_mm_s: 40
+    press:
+      skill_type: "cartesian_position"
+      traZmm: -10
+      frame: "world"
+      linear_velocity_mm_s: 25
+    close_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_close.urp","/programs/control_by_CARI.urp"]
+      play: true
+    open_gripper:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/gripper_open.urp","/programs/control_by_CARI.urp"]
+      play: true

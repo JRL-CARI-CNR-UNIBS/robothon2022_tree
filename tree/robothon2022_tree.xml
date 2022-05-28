@@ -6,18 +6,21 @@
 <include path="press_red_button.xml" />
 <include path="pick_and_insert_key.xml"/>
 <include path="pick_and_insert_ethernet.xml"/>
+<include path="remove_and_insert_batteries_AA.xml"/>
 <include path="extract_batteries_AA.xml"/>
+<include path="pick_first_battery.xml"/>
+<include path="pick_second_battery.xml"/>
+<include path="insert_second_battery.xml"/>
+<include path="insert_first_battery.xml"/>
 <include path="extract_coin_battery.xml"/>
-<!--TO DO
-<include ros_pkg="robothon2022_tree" path="tree/press_red_button.xml"/>-->
 
   <BehaviorTree ID="MainTree">
     <Sequence>
-      <SubTree ID='GoHome'/>
+      <!-- <SubTree ID='GoHome'/>
       <SubTree ID="PressBlueButton"/>
       <SubTree ID='PickAndInsertKey'/>
-      <SubTree ID='PickAndInsertEthernet'/>
-      <!-- <SubTree ID='ExtractBatteriesAA'/> -->
+      <SubTree ID='PickAndInsertEthernet'/> -->
+      <SubTree ID='RemoveAndInsertBatteriesAA'/>
       <SubTree ID='ExtractCoinBattery'/>
       <SubTree ID='PressRedButton'/>
       <SubTree ID='GoHome'/>
