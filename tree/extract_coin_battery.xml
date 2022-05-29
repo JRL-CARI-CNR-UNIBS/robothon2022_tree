@@ -3,18 +3,18 @@
   <BehaviorTree ID="ExtractCoinBattery">
     <Sequence name="extract_coin_Battery">
       <GoToActionNode  name="extract_coin_battery/go_to_battery"/>
-      <SkillActionNode name="extract_coin_battery/close_gripper"/>
+      <SkillActionNode name="extract_coin_battery/skill"/>
+
+      <!-- <SkillActionNode name="extract_coin_battery/close_gripper"/>
       <SkillActionNode name="extract_coin_battery/go_down"/>
-      <!-- <SkillActionNode name="extract_coin_battery/press"/> -->
       <SkillActionNode name="extract_coin_battery/push"/>
       <SkillActionNode name="extract_coin_battery/go_up"/>
       <SkillActionNode name="extract_coin_battery/open_gripper"/>
-      <!-- <SkillActionNode name="extract_coin_battery/go_on_battery"/> -->
       <SkillActionNode name="extract_coin_battery/down_on_battery"/>
       <SkillActionNode name="extract_coin_battery/close_gripper_slow"/>
       <SkillActionNode name="extract_coin_battery/go_up"/>
       <SkillActionNode name="extract_coin_battery/go_out"/>
-      <SkillActionNode name="extract_coin_battery/open_gripper"/>
+      <SkillActionNode name="extract_coin_battery/open_gripper"/> -->
     </Sequence>
   </BehaviorTree>
 </root>

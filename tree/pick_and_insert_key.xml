@@ -5,11 +5,11 @@
   <BehaviorTree ID="PickAndInsertKey">
      <Sequence name="pick_and_insert_key_sequence">    <!--parte utile verso l'interno -->
       <GoToActionNode  name="pick_and_insert_key/go_to_key"/>
-      <SkillActionNode name="pick_and_insert_key/open_gripper"/>
+      <SkillActionNode name="pick_and_insert_key/skill"/>
+      <!-- <SkillActionNode name="pick_and_insert_key/open_gripper"/>
       <SkillActionNode name="pick_and_insert_key/go_down"/>
       <SkillActionNode name="pick_and_insert_key/close_gripper"/>
       <SkillActionNode name="pick_and_insert_key/extract_key"/>
-      <!-- <SkillActionNode name="pick_and_insert_key/go_to_key_lock"/> -->
       <GoToActionNode  name="pick_and_insert_key/insert_go_to_key_lock"/>
       <SkillActionNode name="pick_and_insert_key/rotate_pre_touch"/>
       <SkillActionNode name="pick_and_insert_key/go_down_to_key_hole"/>
@@ -18,7 +18,7 @@
       <SkillActionNode name="pick_and_insert_key/insert_key"/>
       <SkillActionNode name="pick_and_insert_key/rotate_key"/>
       <SkillActionNode name="pick_and_insert_key/open_gripper"/>
-      <SkillActionNode name="pick_and_insert_key/go_up"/>
+      <SkillActionNode name="pick_and_insert_key/go_up"/> -->
 
     </Sequence>
   </BehaviorTree>

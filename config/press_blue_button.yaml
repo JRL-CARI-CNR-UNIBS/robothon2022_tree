@@ -1,6 +1,11 @@
 exec_params:
 
   press_blue_button:
+    skill:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/button.urp","/programs/control_by_CARI.urp"]
+      play: true
     go_to_blue_button:
       location_name: ["blue_button"]
     close_gripper:

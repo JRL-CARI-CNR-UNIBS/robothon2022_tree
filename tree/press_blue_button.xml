@@ -4,10 +4,12 @@
   <BehaviorTree ID="PressBlueButton">
     <Sequence name="press_blue_button_sequence">
       <GoToActionNode  name="press_blue_button/go_to_blue_button"/>
-      <SkillActionNode name="press_blue_button/close_gripper"/>
-      <SkillActionNode name="press_blue_button/go_down"/>
+      <SkillActionNode name="press_blue_button/skill"/>
+
+      <!-- <SkillActionNode name="press_blue_button/close_gripper"/>
+      <SkillActionNode name="press_blue_button/go_down"/> -->
       <!-- <SkillActionNode name="press_blue_button/press"/> -->
-      <SkillActionNode name="press_blue_button/go_up"/>
+      <!-- <SkillActionNode name="press_blue_button/go_up"/> -->
     </Sequence>
   </BehaviorTree>
 </root>

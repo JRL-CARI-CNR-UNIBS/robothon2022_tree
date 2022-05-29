@@ -3,14 +3,14 @@
   <BehaviorTree ID="InsertSecondBattery">
     <Sequence name="insert_second_battery">
       <GoToActionNode  name="insert_battery/go_to_second_battery_hole"/>
-      <SkillActionNode name="insert_battery/go_down_second"/>
+      <!-- <SkillActionNode name="insert_battery/go_down_second"/>
       <SkillActionNode name="insert_battery/second_battery_shift"/>
       <SkillActionNode name="insert_battery/push_button"/>
       <SkillActionNode name="insert_battery/open_gripper"/>
       <SkillActionNode name="insert_battery/go_up"/>
       <SkillActionNode name="insert_battery/close_gripper"/>
       <SkillActionNode name="insert_battery/press_second_battery"/>
-      <SkillActionNode name="insert_battery/go_up"/>
+      <SkillActionNode name="insert_battery/go_up"/> -->
     </Sequence>
   </BehaviorTree>
 </root>

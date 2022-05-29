@@ -1,6 +1,12 @@
 exec_params:
 
   pick_and_insert_key:
+    skill:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/key.urp","/programs/control_by_CARI.urp"]
+      play: true
+
     go_to_key:
       location_name: ["pick_key"]
     open_gripper:

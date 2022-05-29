@@ -20,7 +20,7 @@
       <SubTree ID="PressBlueButton"/>
       <SubTree ID='PickAndInsertKey'/>
       <SubTree ID='PickAndInsertEthernet'/>
-      <SubTree ID='RemoveAndInsertBatteriesAA'/>
+      <SubTree ID='ExtractBatteriesAA'/>
       <SubTree ID='ExtractCoinBattery'/>
       <SubTree ID='PressRedButton'/>
       <SubTree ID='GoHome'/>

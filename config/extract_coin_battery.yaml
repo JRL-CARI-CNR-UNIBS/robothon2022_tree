@@ -1,5 +1,13 @@
 exec_params:
+
   extract_coin_battery:
+    skill:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/coin_battery.urp","/programs/control_by_CARI.urp"]
+      play: true
+    
+
     go_to_battery:
       location_name: ["coin_battery"]
     go_down:

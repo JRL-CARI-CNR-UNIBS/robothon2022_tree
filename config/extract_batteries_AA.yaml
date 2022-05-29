@@ -2,6 +2,17 @@ exec_params:
   extract_batteries_AA:
     go_to_batteries_AA_case:
       location_name: ["batteries_AA_case"]
+    skill:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/case.urp"]
+      play: true
+    skill2:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/battery.urp","/programs/control_by_CARI.urp"]
+      play: true
+
     go_to_tool:
       location_name: ["extract_tool"]
     go_to_first_battery:

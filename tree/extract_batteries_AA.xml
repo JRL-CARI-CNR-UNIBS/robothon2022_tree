@@ -3,9 +3,13 @@
   <BehaviorTree ID="ExtractBatteriesAA">
     <Sequence name="extract_batteries_AA_sequence">
       <GoToActionNode  name="extract_batteries_AA/go_to_batteries_AA_case"/>
-      <SkillActionNode name="extract_batteries_AA/close_gripper"/>
+      <SkillActionNode name="extract_batteries_AA/skill"/>
+      <SkillActionNode name="extract_batteries_AA/skill2"/>
+
+
+
+      <!-- <SkillActionNode name="extract_batteries_AA/close_gripper"/>
       <SkillActionNode name="extract_batteries_AA/go_down_case"/>
-      <!-- <SkillActionNode name="extract_batteries_AA/press_case"/> -->
       <SkillActionNode name="extract_batteries_AA/remove_case"/>
       <SkillActionNode name="extract_batteries_AA/go_up"/>
       <GoToActionNode  name="extract_batteries_AA/go_to_tool"/>
@@ -24,26 +28,8 @@
       <GoToActionNode  name="extract_batteries_AA/go_to_tool"/>
       <SkillActionNode name="extract_batteries_AA/go_down"/>
       <SkillActionNode name="extract_batteries_AA/open_gripper"/>
-      <SkillActionNode name="extract_batteries_AA/go_up"/>
-      <!-- <GoToActionNode  name="extract_batteries_AA/go_to_magnet"/>
-      <SkillActionNode name="extract_batteries_AA/open_gripper"/>
-      <SkillActionNode name="extract_batteries_AA/go_down_magnet"/> -->
-      <!-- <SkillActionNode name="extract_batteries_AA/press_magnet"/> -->
-      <!-- <SkillActionNode name="extract_batteries_AA/close_gripper"/>
-      <SkillActionNode name="extract_batteries_AA/go_up_magnet"/>
-      <GoToActionNode  name="extract_batteries_AA/go_to_first_battery"/>
-      <SkillActionNode name="extract_batteries_AA/go_down_battery"/>
-      <SkillActionNode name="extract_batteries_AA/press_magnet"/>
-      <SkillActionNode name="extract_batteries_AA/active_magnet"/>
-      <SkillActionNode name="extract_batteries_AA/go_up"/>
-      <GoToActionNode  name="extract_batteries_AA/go_to_insert_first"/>
-      <SkillActionNode name="extract_batteries_AA/insert_battery"/>
-      <SkillActionNode name="extract_batteries_AA/deactive_magnet"/>
-      <SkillActionNode name="extract_batteries_AA/go_up"/>
-      <GoToActionNode  name="extract_batteries_AA/go_to_magnet"/>
-      <SkillActionNode name="extract_batteries_AA/go_down_magnet"/>
-      <SkillActionNode name="extract_batteries_AA/open_gripper"/>
       <SkillActionNode name="extract_batteries_AA/go_up"/> -->
+
     </Sequence>
   </BehaviorTree>
 </root>

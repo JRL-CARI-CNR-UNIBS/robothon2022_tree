@@ -4,10 +4,10 @@
 <root>
   <BehaviorTree ID="PickAndInsertEthernet">
     <Sequence name="pick_and_insert_ethernet_sequence">
-      <SkillActionNode name="pick_and_insert_ethernet/open_gripper"/>
+      <!-- <SkillActionNode name="pick_and_insert_ethernet/open_gripper"/> -->
       <GoToActionNode  name="pick_and_insert_ethernet/go_to_ethernet"/>
-      <!-- <SkillActionNode name="pick_and_insert_ethernet/rotation"/> -->
-      <SkillActionNode name="pick_and_insert_ethernet/go_down"/>
+      <SkillActionNode name="pick_and_insert_ethernet/skill"/>
+      <!-- <SkillActionNode name="pick_and_insert_ethernet/go_down"/>
       <SkillActionNode name="pick_and_insert_ethernet/close_gripper"/>
       <SkillActionNode name="pick_and_insert_ethernet/go_up"/>
       <SkillActionNode name="pick_and_insert_ethernet/go_to_ethernet_lock"/>
@@ -15,10 +15,9 @@
       <SkillActionNode name="pick_and_insert_ethernet/touch_ethernet_hole"/>
       <SkillActionNode name="pick_and_insert_ethernet/rotate_ethernet"/>
       <SkillActionNode name="pick_and_insert_ethernet/shift_ethernet"/>
-      <!-- <SkillActionNode name="pick_and_insert_ethernet/push_ethernet_hole"/> -->
       <SkillActionNode name="pick_and_insert_ethernet/go_down_ethernet_hole"/>
       <SkillActionNode name="pick_and_insert_ethernet/open_gripper"/>
-      <SkillActionNode name="pick_and_insert_ethernet/go_up"/>
+      <SkillActionNode name="pick_and_insert_ethernet/go_up"/> -->
     </Sequence>
   </BehaviorTree>
 </root>
