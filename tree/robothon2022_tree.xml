@@ -16,10 +16,10 @@
 
   <BehaviorTree ID="MainTree">
     <Sequence>
-      <!-- <SubTree ID='GoHome'/>
+      <SubTree ID='GoHome'/>
       <SubTree ID="PressBlueButton"/>
       <SubTree ID='PickAndInsertKey'/>
-      <SubTree ID='PickAndInsertEthernet'/> -->
+      <SubTree ID='PickAndInsertEthernet'/>
       <SubTree ID='RemoveAndInsertBatteriesAA'/>
       <SubTree ID='ExtractCoinBattery'/>
       <SubTree ID='PressRedButton'/>

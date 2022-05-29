@@ -4,9 +4,14 @@ exec_params:
       location_name: ["insert_second_battery"]
     go_to_first_battery_hole:
       location_name: ["insert_first_battery"]
-    go_down:
+    go_down_first:
       skill_type: "cartesian_position"
-      traZmm: -52
+      traZmm: -62
+      frame: "world"
+      linear_velocity_mm_s: 40
+    go_down_second:
+      skill_type: "cartesian_position"
+      traZmm: -85
       frame: "world"
       linear_velocity_mm_s: 40
     push_down:
@@ -40,6 +45,11 @@ exec_params:
     press:
       skill_type: "cartesian_position"
       traZmm: -10
+      frame: "world"
+      linear_velocity_mm_s: 25
+    press_second_battery:
+      skill_type: "cartesian_position"
+      traZmm: -18
       frame: "world"
       linear_velocity_mm_s: 25
     close_gripper:

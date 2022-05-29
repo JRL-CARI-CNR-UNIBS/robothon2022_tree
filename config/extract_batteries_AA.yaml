@@ -72,7 +72,7 @@ exec_params:
       linear_velocity_mm_s: 40
     go_up:
       skill_type: "cartesian_position"
-      traZmm: 35
+      traZmm: 70
       frame: "world"
       linear_velocity_mm_s: 40
     go_up_fast:
