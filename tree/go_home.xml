@@ -3,7 +3,9 @@
 <root>
   <BehaviorTree ID="GoHome">
     <Sequence name="go_home_sequence">
-      <GoToActionNode name="go_home/go_to_home"/>
+      <SkillActionNode name="go_home/skill"/>
+
+      <!-- <GoToActionNode name="go_home/go_to_home"/> -->
       <!-- <SkillActionNode name="go_home/connect_dashboard"/> -->
       <!-- <SkillActionNode name="go_home/gripper_activation"/> -->
     </Sequence>

@@ -66,7 +66,7 @@ BT::NodeStatus GoToActionNode::tick()
     ROS_INFO("Ready to execute goto");
 
     go_to_action_->sendGoalAndWait(go_to_msg);
-    ROS_INFO("Finisc movement");
+    ROS_INFO("Movement finished");
     go_to_result = *go_to_action_->getResult();
 
     switch (go_to_result.result)
