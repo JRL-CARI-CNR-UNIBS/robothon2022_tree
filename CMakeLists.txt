@@ -57,3 +57,9 @@ target_link_libraries( run_tree
         ${catkin_LIBRARIES}
         ${PROJECT_NAME}
 )
+add_executable(        run_pc_ewaste src/run_pc_ewaste.cpp)
+add_dependencies(      run_pc_ewaste ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries( run_pc_ewaste
+        ${catkin_LIBRARIES}
+        ${PROJECT_NAME}
+)

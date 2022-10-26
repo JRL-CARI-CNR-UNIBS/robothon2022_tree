@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root main_tree_to_execute = "MainTree" >
+
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <SkillActionNode name="pc_ewaste/go_home"/>
+      <SkillActionNode name="pc_ewaste/pc_task"/>
+      <SkillActionNode name="pc_ewaste/go_home"/>
+    </Sequence>
+  </BehaviorTree>
+
+</root>

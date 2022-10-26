@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+  <rosparam command="load" file="$(find robothon2022_tree)/config/pc_ewaste.yaml"/>
+  <node name="run_pc_ewaste"
+    type="run_pc_ewaste"
+    pkg="robothon2022_tree"
+    output="screen">
+  </node>
+</launch>

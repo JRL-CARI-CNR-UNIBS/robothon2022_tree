@@ -5,7 +5,8 @@ exec_params:
     skill:
       skill_type: "ur_load_program"
       ur_hw_name: "ur3_hw"
-      programs: ["/programs/case2.urp"]
+      programs: ["/programs/case.urp"]
+      # programs: ["/programs/case2.urp"]
       play: true
     skill2:
       skill_type: "ur_load_program"

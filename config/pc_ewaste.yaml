@@ -1,0 +1,13 @@
+exec_params:
+
+  pc_ewaste:
+    go_home:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/home.urp"]
+      play: true
+    pc_task:
+      skill_type: "ur_load_program"
+      ur_hw_name: "ur3_hw"
+      programs: ["/programs/ewaste_pc.urp"]
+      play: true

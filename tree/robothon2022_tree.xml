@@ -18,10 +18,10 @@
     <Sequence>
       <SubTree ID='GoHome'/>
       <SubTree ID="PressBlueButton"/>
-      <SubTree ID='PickAndInsertKey'/>
-      <SubTree ID='PickAndInsertEthernet'/>
-      <SubTree ID='ExtractBatteriesAA'/>
       <SubTree ID='ExtractCoinBattery'/>
+      <SubTree ID='PickAndInsertEthernet'/>
+      <SubTree ID='PickAndInsertKey'/>
+      <SubTree ID='ExtractBatteriesAA'/>
       <SubTree ID='PressRedButton'/>
       <SubTree ID='GoHome'/>
     </Sequence>
